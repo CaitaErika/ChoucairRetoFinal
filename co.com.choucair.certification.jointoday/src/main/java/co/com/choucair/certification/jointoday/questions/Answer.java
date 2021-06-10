@@ -18,11 +18,11 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String nameCourse= Text.of(SearchRegisterJoinPage.SELECT_JOIN).viewedBy(actor).asString();
-        if (question.equals(nameCourse)){
-            result = true;
-        }else {
+        String nameJoin= Text.of(SearchRegisterJoinPage.SELECT_JOIN).viewedBy(actor).asString();
+        if (question.equals(nameJoin)){
             result = false;
+        }else {
+            result = true;
         }
         return result;
     }

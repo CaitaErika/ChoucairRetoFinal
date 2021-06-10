@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">39.769s</div>
+<div class="counter">44.823s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,40 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Search for register"></a>
-<h3 class="failures">Search for register</h3>
-<span class="code">
-<pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'The last step')]&quot;}
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-98M5F7CQ', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\erika\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60692}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d84a687650800761f0851a9591e6fb7
-*** Element info: {Using=xpath, value=//div[contains(text(),'The last step')]}
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at co.com.choucair.certification.jointoday.stepdefinitions.JoinToDayStepDefinitions.toJoinTheCommunity(JoinToDayStepDefinitions.java:37)
-	at ✽.to join the community(src/test/resources/features/JoinToDay.feature:13)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -105,157 +78,177 @@ Session ID: 7d84a687650800761f0851a9591e6fb7
 </tr>
 </thead>
 <tr>
-<td class="failures">Search for register</td>
-<td class="failures">39.769s</td>
-<td class="failures">failed</td>
+<td class="success">Search for register</td>
+<td class="success">44.823s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23880cc5
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7a4b495b
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@33e0de24
-jun 09, 2021 3:49:12 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+jun 10, 2021 3:51:30 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 7442
+Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 28142
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-jun 09, 2021 3:49:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+jun 10, 2021 3:51:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1626427e
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3dfe2820
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@49df7d20
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5b041da
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7e55a860
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@33be1108
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@200da18
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@643abdb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27cc3f07
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6aafc32
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23c97564
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@75cff774
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3e6f855f
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2727bc2e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6d347b42
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@42707a5
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@31d787b8
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@767d104a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@9d986a4
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7e27972f
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@261449ec
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@481bbdfd
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2658b340
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@22358e69
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@57586836
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@464b8d9a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@46abc13
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6d8351e8
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@429b4501
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7dfe81b9
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6ca4ee9e
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4c3e09ee
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d550fd9
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1764ab53
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@71c7e472
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@692b397a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6f5ef231
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@38bb4733
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]]
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2609e61a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]]
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@444b306a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d300d62
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@bd64935
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
+| Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
+| strName | strLastName | strEmail | strPassword | strConfirm |
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
+| Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
+| strName | strLastName | strEmail | strPassword | strConfirm |
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@243c1ab7
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@475fbc05
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
+| Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
+| strName | strLastName | strEmail | strPassword | strConfirm |
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]], Then to join the community
+| strCommunity |
+| The last step | [Then answer]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for register:Given than erika wants to join world is largest community of testers
+| Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
+| strName | strLastName | strEmail | strPassword | strConfirm |
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]], Then to join the community
+| strCommunity |
+| The last step | [Then answer]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]], Then to join the community
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]], Then to join the community
 | strCommunity |
 | The last step | [Then answer]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]], Then to join the community
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]], Then to join the community
 | strCommunity |
 | The last step | [Then answer]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Search for register:Given than erika wants to join world is largest community of testers
 | Register | [Erika open up [Erika opens the Join to day academy page], Erika login [Erika clicks on button that shows us the form to login]], When She wants to register her data in the registration form
 | strName | strLastName | strEmail | strPassword | strConfirm |
-| Isabel | Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions]], Then to join the community
+| Isabel | Caita Avila | eicaita@misena.edu.co | hd5df4HrPi5oMdiExWUoZy | hd5df4HrPi5oMdiExWUoZy | [Erika search [Erika enters 'Isabel' into were do we write the user, Erika enters 'Caita Avila' into were do we write the password, Erika enters 'eicaita@misena.edu.co' into were do we write the email, Erika clicks on select month, Erika clicks on select day, Erika clicks on select year, Erika clicks on click to next form, Erika clicks on select city, Erika clicks on select next form two, Erika clicks on select next form two, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the password, Erika enters 'hd5df4HrPi5oMdiExWUoZy' into were do we write the confirm password, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on clic to accept conditions, Erika clicks on select confirmation message, Erika clicks on click to send form]], Then to join the community
 | strCommunity |
 | The last step | [Then answer]]
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Search for register
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then answer
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'The last step')]&quot;}
+TEST PASSED: Search for register
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -267,7 +260,7 @@ TEST FAILED WITH ERROR: Search for register
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 9/06/2021 03:49:53 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 10/06/2021 03:52:21 AM</p>
 </div>
 </div>
 </body>

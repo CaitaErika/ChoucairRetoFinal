@@ -1,4 +1,5 @@
 package co.com.choucair.certification.jointoday.stepdefinitions;
+
 import co.com.choucair.certification.jointoday.model.JoinToDayData;
 import co.com.choucair.certification.jointoday.questions.Answer;
 import co.com.choucair.certification.jointoday.tasks.Login;

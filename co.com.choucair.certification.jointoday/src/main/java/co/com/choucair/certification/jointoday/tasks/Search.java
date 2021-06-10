@@ -42,8 +42,9 @@ public class Search implements Task {
                 Enter.theValue(strConfirm).into(SearchRegisterJoinPage.INPUT_CONFPASS),
                 Click.on(SearchRegisterJoinPage.SELECT_VALUEONE),
                 Click.on(SearchRegisterJoinPage.SELECT_VALUETWO),
-                Click.on(SearchRegisterJoinPage.SELECT_VALUETHREE)
-
+                Click.on(SearchRegisterJoinPage.SELECT_VALUETHREE),
+                Click.on(SearchRegisterJoinPage.SELECT_JOIN),
+                Click.on(SearchRegisterJoinPage.SELECT_END)
 
         );
     }

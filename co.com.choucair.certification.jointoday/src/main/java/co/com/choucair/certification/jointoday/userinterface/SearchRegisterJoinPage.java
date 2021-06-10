@@ -22,6 +22,7 @@ public class SearchRegisterJoinPage{
     public static final Target SELECT_VALUEONE = Target.the("clic to accept conditions").located(By.xpath("//div[@class='container-fluid']//div[contains(text(),'Please keep me up-to-date via email on the latest projects and updates from uTest. This is not required but highly recommended in order to receive info as it becomes available.')]"));
     public static final Target SELECT_VALUETWO = Target.the("clic to accept conditions").located(By.id("termOfUse"));
     public static final Target SELECT_VALUETHREE = Target.the("clic to accept conditions").located(By.id("privacySetting"));
+    public static final Target SELECT_JOIN = Target.the("select confirmation message" ).located(By.xpath("//div[contains(@class,'container-fluid')]"));
     public static final Target SELECT_END = Target.the("click to send form").located(By.xpath("//div[@class='container-fluid']//span[contains(text(),'Complete Setup')]"));
-    public static final Target SELECT_JOIN = Target.the("select confirmation message" ).located(By.xpath("//div[contains(text(),'The last step')]"));
+
 }
